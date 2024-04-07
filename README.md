@@ -52,3 +52,10 @@ https://github.com/facebook/react-native/issues/38282
 https://github.com/react-navigation/react-navigation/issues/11192
 
 2. redux를 개발자 취업 전 프로젝트에서 마지막으로 써보고 2년간 사용하지 않았고, saga를 처음 사용하다보니 처음 이해하는데 시간이 조금 걸렸음
+
+3. iOS 에서 기본으로 http 프로토콜을 제한하고 있는지 알고 있지 못했음. 그래서 axios network error 가 났었는데 구글링 결과 info.plist 에 NSAppTransportSecurity 부분에서 따로 혀용이 필요한 부분이었음.
+
+
+
+
+## 읽어주셔서 감사합니다. 오늘도 좋은 하루 되세요!
