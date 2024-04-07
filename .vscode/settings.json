@@ -10,6 +10,7 @@
         "packagejson",
         "Pressable",
         "reduxjs",
-        "todos"
+        "todos",
+        "xcworkspace"
     ],
 }
