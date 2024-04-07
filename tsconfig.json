@@ -1,3 +1,76 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/redux": [
+        "./app/redux"
+      ],
+      "@/redux/*": [
+        "./app/redux/*"
+      ],
+      "@/components": [
+        "./app/components"
+      ],
+      "@/components/*": [
+        "./app/components/*"
+      ],
+      "@/hooks": [
+        "./app/hooks"
+      ],
+      "@/providers": [
+        "./app/providers"
+      ],
+      "@/screens": [
+        "./app/screens"
+      ],
+      "@/screens/*": [
+        "./app/screens/*"
+      ],
+      "@/containers": [
+        "./app/containers"
+      ],
+      "@/containers/*": [
+        "./app/containers/*"
+      ]
+    },
+    "target": "es6",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "android",
+    "assets",
+    "bin",
+    "ios",
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    ".babelrc.js",
+    "./@types",
+    "app.json",
+    "package.json",
+  ],
+  "typeRoots": [
+    "./types"
+  ]
 }

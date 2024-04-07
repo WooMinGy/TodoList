@@ -1,7 +1,14 @@
 module.exports = {
-  arrowParens: 'avoid',
-  bracketSameLine: true,
-  bracketSpacing: false,
+  printWidth: 100,
   singleQuote: true,
-  trailingComma: 'all',
+  tabWidth: 2,
+  endOfLine: 'auto',
+  overrides: [
+    {
+      files: '*.sol',
+      options: {
+        tabWidth: 4,
+      },
+    },
+  ],
 };
