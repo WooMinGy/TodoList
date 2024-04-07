@@ -29,13 +29,8 @@ const keystore = createKeyStore<IMMKVKeystoreString, IMMKVKeystoreNumber, IMMKVK
 
 function* fetchTodosSaga() {
   try {
-    const response = yield call(fetch, `${API_URL}/todo/`);
-
-    if (!response.ok) {
-      throw new Error('Network response error');
-    }
-
-    let todos = yield response.json();
+    const response = yield call(axios.get, `${API_URL}/todo/`);
+    let todos = response.data;
 
     const isDoneArrayStr = keystore.getString(EnumMMKVKeystoreString.IS_DONE_ARRAY);
     let isDoneArray = isUndefined(isDoneArrayStr) ? [] : JSON.parse(isDoneArrayStr);
